@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --dark-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--desaturated-blue);
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Profile Card Page */
+
+main {
+    background: url(../assets/bg-pattern-top.svg) calc((50vw - 100vh)) -50vh no-repeat,
+    url(../assets/bg-pattern-bottom.svg) 55vw 50vh no-repeat var(--dark-cyan);
+    background-size: auto 100vh;
+}
+
+/* Card */
+
+.profile-card {
+    height: 380px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px hsl(185deg 90% 18% / 31%),
+    0 10px 10px rgb(25 162 174 / 19%);
+
+}
+
+.card-cover img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* Profile Picture */
+
+.img-container {
+    position: relative;
+    left: 120px;
+    bottom: 50px;
+    width: 100%;
+    height: 60px;
+}
+
+.profile-picture {
+    width: 30%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+/* Profile Information */
+
+.profile-info {
+    height: 20%;
+}
+
+.profile-info * {
+    margin: 5px 0;
+}
+
+.profile-age {
+    font-weight: 300;
+    padding: 0 .3rem;
+}
+
+/* Profile Followers */
+
+.profile-followers {
+    height: 25%;
+    border-top: 1px solid #efefef;
+}
+
+.top-followers {
+    margin: .7rem 0;
+}
+
+/* Utilities */
+
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-xcenter {
+    justify-content: center;
+}
+
+.flex-ycenter {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
