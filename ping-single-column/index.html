@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="./styles/styles.css" type="text/css" rel="stylesheet">
+    <link href="./assets/favicon-32x32.png" type="image/png" sizes="32x32" rel="icon">
+    <title>Frontend Mentor | Ping Single Column Page</title>
+</head>
+
+<body class="grid grid-template">
+    <header>
+        <div class="container flex flex-xcenter flex-ycenter">
+            <div class="logo-container">
+                <img src="./assets/logo.svg" alt="Ping's Logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="showcase">
+            <div class="container flex flex-ycenter flex-column">
+                <h1 class="showcase-header">We are launching <span>soon!</span></h1>
+                <p class="showcase-desc">Subscribe and get notified</p>
+                <div class="email-container">
+                    <input class="email-input" id="e-input" type="text" placeholder="Your email address...">
+                    <button class="btn" id="e-submit">Notify me</button>
+                </div>
+                <div class="img-container">
+                    <img src="./assets/illustration-dashboard.png" alt="Dashboard Illustration">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container flex flex-xcenter flex-ycenter flex-around flex-column">
+            <div class="icons flex">
+                <a href="#">
+                    <div class="icon-container">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon-container">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="icon-container">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="copyright-container">
+                <span class="copyright">Copyright Ping. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
